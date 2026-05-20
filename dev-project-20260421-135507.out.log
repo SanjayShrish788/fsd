@@ -1,0 +1,60 @@
+
+> privacy-ai-assistant@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+[0] 
+[0] > privacy-ai-assistant@1.0.0 server
+[0] > node server/server.js
+[0] 
+[1] 
+[1] > privacy-ai-assistant@1.0.0 client
+[1] > cd client && npm run dev
+[1] 
+[1] 
+[1] > client@0.0.0 dev
+[1] > vite
+[1] 
+[0] (node:18484) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[0] (Use `node --trace-deprecation ...` to show where the warning was created)
+[0] Database initialized successfully
+[0] Server running on http://localhost:5001
+[0] Accepting requests from: http://localhost:5173
+[1] 
+[1]   [32m[1mVITE[22m v8.0.9[39m  [2mready in [0m[1m276[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[1] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[0] AI request received { model: 'gemini-2.5-flash', hasImage: false, mimeType: null }
+[0] Chat error: ApiError: {"error":{"code":403,"message":"Your API key was reported as leaked. Please use another API key.","status":"PERMISSION_DENIED"}}
+[0]     at throwErrorIfNotOK (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13415:30)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13118:13
+[0]     at async Models.generateContent (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:14523:24)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7196:30
+[0]     at async Chat.sendMessage (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7212:9)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\server\routes\chat.js:87:22 {
+[0]   status: 403
+[0] }
+[0] AI request received { model: 'gemini-2.5-flash', hasImage: false, mimeType: null }
+[0] Chat error: ApiError: {"error":{"code":403,"message":"Your API key was reported as leaked. Please use another API key.","status":"PERMISSION_DENIED"}}
+[0]     at throwErrorIfNotOK (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13415:30)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13118:13
+[0]     at async Models.generateContent (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:14523:24)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7196:30
+[0]     at async Chat.sendMessage (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7212:9)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\server\routes\chat.js:87:22 {
+[0]   status: 403
+[0] }
+[1] [2m1:58:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/AIStatus.jsx[22m
+[1] [2m1:58:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatWindow.jsx, /src/index.css[22m
+[0] AI request received { model: 'gemini-2.5-flash', hasImage: false, mimeType: null }
+[0] Chat error: [TypeError: fetch failed] {
+[0]   [cause]: Error: getaddrinfo ENOTFOUND generativelanguage.googleapis.com
+[0]       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+[0]     errno: -3008,
+[0]     code: 'ENOTFOUND',
+[0]     syscall: 'getaddrinfo',
+[0]     hostname: 'generativelanguage.googleapis.com'
+[0]   }
+[0] }

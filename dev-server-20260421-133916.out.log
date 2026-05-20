@@ -1,0 +1,7 @@
+
+> privacy-ai-assistant@1.0.0 server
+> node server/server.js
+
+Database initialized successfully
+Server running on http://localhost:5001
+Accepting requests from: http://localhost:5173

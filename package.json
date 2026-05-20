@@ -1,0 +1,28 @@
+{
+  "name": "privacy-ai-assistant",
+  "version": "1.0.0",
+  "description": "Privacy-Preserving AI Assistant for Visually Impaired Users",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "install:all": "npm install && cd client && npm install",
+    "start": "node server/server.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "main": "server/server.js",
+  "engines": { "node": "18.x" },
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sql.js": "^1.11.0"
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: visionassist-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        value: your_key_here
+      - key: JWT_SECRET
+        value: your_secret_here
+      - key: ENCRYPTION_KEY
+        value: your_32char_key_here
+      - key: FRONTEND_URL
+        value: https://your-app.vercel.app
+      - key: DB_PATH
+        value: ./server/db/assistant.db

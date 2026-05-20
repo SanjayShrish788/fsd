@@ -1,0 +1,90 @@
+
+> privacy-ai-assistant@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+[0] 
+[0] > privacy-ai-assistant@1.0.0 server
+[0] > node server/server.js
+[0] 
+[1] 
+[1] > privacy-ai-assistant@1.0.0 client
+[1] > cd client && npm run dev
+[1] 
+[1] 
+[1] > client@0.0.0 dev
+[1] > vite
+[1] 
+[0] (node:12436) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[0] (Use `node --trace-deprecation ...` to show where the warning was created)
+[0] Database initialized successfully
+[0] Server running on http://localhost:5001
+[0] Accepting requests from: http://localhost:5173
+[1] 
+[1]   [32m[1mVITE[22m v8.0.9[39m  [2mready in [0m[1m276[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[1] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[1] [2m1:44:26 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[1] [2m1:45:26 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mTypeError[22m: Cannot read properties of null (reading 'id')
+[1] [39m > src/App.jsx:327:34
+[1]     325 |            </button>
+[1]     326 |            <div className="font-semibold truncate flex-1 text-center pr-8">
+[1]     327 |              {sessions.find(s => s.id === currentSessionId)?.title || 'New Conversation'}
+[1]         |                                    ^
+[1]     328 |            </div>
+[1]     329 |          </header>
+[1]  > MainApp src/App.jsx:327:22
+[1]  > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+[1]  > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+[1]  > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+[1]  > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+[1]  > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+[1]  > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+[1]  > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+[1] 
+[1] [2m1:45:26 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <MainApp> component.
+[1] 
+[1] Consider adding an error boundary to your tree to customize error handling behavior.
+[1] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+[1] 
+[1] [2m1:45:27 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to create session: TypeError: Cannot read properties of null (reading 'id')
+[1]     at handleCreateSession (http://localhost:5173/src/App.jsx?t=1776759266662:105:42)
+[1] [2m1:45:28 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to create session: TypeError: Cannot read properties of null (reading 'id')
+[1]     at handleCreateSession (http://localhost:5173/src/App.jsx?t=1776759266662:105:42)
+[0] received image null undefined
+[1] [2m1:46:14 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to create session: TypeError: Cannot read properties of null (reading 'id')
+[1]     at handleCreateSession (http://localhost:5173/src/App.jsx?t=1776759266662:105:42)
+[0] received image null undefined
+[0] Chat error: ApiError: {"error":{"code":403,"message":"Your API key was reported as leaked. Please use another API key.","status":"PERMISSION_DENIED"}}
+[0]     at throwErrorIfNotOK (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13415:30)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13118:13
+[0]     at async Models.generateContent (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:14523:24)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7196:30
+[0]     at async Chat.sendMessage (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7212:9)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\server\routes\chat.js:58:22 {
+[0]   status: 403
+[0] }
+[0] received image null undefined
+[0] Chat error: ApiError: {"error":{"code":403,"message":"Your API key was reported as leaked. Please use another API key.","status":"PERMISSION_DENIED"}}
+[0]     at throwErrorIfNotOK (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13415:30)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13118:13
+[0]     at async Models.generateContent (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:14523:24)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7196:30
+[0]     at async Chat.sendMessage (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7212:9)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\server\routes\chat.js:58:22 {
+[0]   status: 403
+[0] }
+[0] received image image/png 1931272
+[0] Chat error: ApiError: {"error":{"code":403,"message":"Your API key was reported as leaked. Please use another API key.","status":"PERMISSION_DENIED"}}
+[0]     at throwErrorIfNotOK (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13415:30)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:13118:13
+[0]     at async Models.generateContent (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:14523:24)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7196:30
+[0]     at async Chat.sendMessage (C:\Users\ssanj\OneDrive\Desktop\fsd\node_modules\@google\genai\dist\node\index.cjs:7212:9)
+[0]     at async C:\Users\ssanj\OneDrive\Desktop\fsd\server\routes\chat.js:58:22 {
+[0]   status: 403
+[0] }
+[1] [2m1:49:57 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
